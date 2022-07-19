@@ -1,85 +1,86 @@
 # Adhoc Website Instructions
+
 ---
+
 These are the step-by-step instructions for putting together the Adhoc site.  
 I recommend that you try each section independently before using this to check your results instead of copy off however this is perfect if you don't know where to start.  
 I have rewritten the instructions a bit more and they are now a lot more dependent on `Ctrl + F` for finding what I am refering to.  
 Some things have been reworded so [see the original instructions here](https://docs.google.com/document/d/1Ed2jBCxiD5MWOk4DMdlR1RulvduodNqcdALRBDBpRuM/edit).
 
-
 ## Editing the Navbar
+
 Before starting the navbar, you'll notice that there's already some starter code (between the `<nav>` to `</nav>` lines)  
 This code was copied straight from Bootstrap's navbar example [here](https://getbootstrap.com/docs/4.2/components/navbar/)
 
 It’s a good template to start from but it still needs to be edited to fit our needs.  
 For our purposes, remove the HTML responsible for the following:
-* The Navbar item with a dropdown
-* The link that says "Disabled"
-* The search bar
+
+- The navbar item with a dropdown
+- The link that says "Disabled"
+- The search bar
 
 #### The Logo
+
 Add the Adhoc logo to the navbar where the design spec indicates it should be.
+
 1. Locate the element with class `navbar-brand`
-2. Delete the text Navbar and replace it with an ``<img>`` element with the correct src value
-  * Make sure to upload the logo from the `zip` file into the `assets` folder first!
+2. Delete the text Navbar and replace it with an `<img>` element with the correct src value
+
+- Make sure to upload the logo from the `zip` file into the `assets` folder first!
+
 3. Remember to assign an appropriate value to the alt attribute.
 
 #### The Navigation Links
+
 According to the design spec, we should have 4 links (not including the brand) in the navbar.
 Using the second link as a template, make 2 additional links and update the link texts to match the design spec.
 
-
 ## Adding the Jumbotron
-Under the navbar, there’s a `<div>` that we’re going to turn into our Jumbotron!
 
-It currently has some inline CSS that renders a background image.
+Under the navbar, there’s a `<div>` that we’re going to turn into our Jumbotron! (`id="this-is-the-jumbotron-div"`)  
+It currently has some inline CSS that renders a placeholder background image.
 
-Provide it with a class of "jumbotron" and "jumbotron-fluid" to get a jumbotron that spans the entire screen/viewport.
+1. Provide it with a class of "jumbotron" and "jumbotron-fluid" to get a jumbotron that spans the entire viewport/screen.
+2. Inside the jumbotron, add another ``<div>`
 
-Inside the jumbotron, add another <div>. This new <div> is going to act as a background and container for the text we want to insert. Therefore, inside the <div> add an <h1> element followed by a <p>.
+- This new `<div>` will act as a background and container for the text we want to insert. Therefore, insert an `<h1>` element followed by a `<p>` element inside it
 
-Use the design spec and add the appropriate text inside both the <h1> and the <p> elements.
+3. Follow the design spec and add the appropriate text inside both the `<h1>` and the `<p>` elements.
+4. Time to style the elements we just added. We want the new `<div>` to have:
 
-Time to style the elements we just added. We want the new <div> to have:
+- A grey background
+- White and centered text.
+- Larger top and bottom margins by assigning a class of `my-5`
+  - This utility class increases the vertical margins of an element
+- Also, give the `<h1>` element a [display heading](https://getbootstrap.com/docs/4.2/content/typography/#display-headings) by assigning a class of `display-4`
 
-a grey background.
-white and centered text.
-larger top and bottom margins by assigning a class of "my-5". This utility class targets and increases the vertical margins of an element.
+#### Styling the Quote
 
-Also, give the <h1> element a display heading by assigning a class of "display-4".
+Let’s style the quote under the jumbotron using utility classes.  
+Following the design spec, provide the `<h2>` element with:
 
-Styling the Quote
-
-Let’s style the quote under the jumbotron using utility classes.
-
-Follow the design spec. Provide the <h2> element with
-
-italic font.
-a light font-weight.
+- An italicized font
+- A light font-weight
 
 Notice the styling of the name, it:
 
-is aligned to the right
-has a bold and italic font
-the text inside the <span> has a normal weight.
+- Is aligned to the right
+- Has a bold and italic font
+- Has normal weight text inside the `<span>` element
 
-Finish up the quote styling by increasing the top and bottom margins of the column containing the quote. You can do so by assigning a class of my-5.
+Finish up the quote styling by increasing the top and bottom margins of the column containing the quote. You can do so by assigning a class of `my-5`.
 
-Why Adhoc? - Cards
+## Cards - Why Adhoc?
 
-Locate the <h2> element with text Why Adhoc?.
-
-Center the text and give it a display heading that follows the design spec.
-
-In the next row, we’re going to continue following the design spec and add one card in each column.
-
-In each column, add a card that:
-
-Does not have a border.
-Has an image icon on the top.
-Has centered text on the bottom.
+1. Locate the `<h2>` element with the text `Why Adhoc?`.  
+2. Center the text and give it a display heading that follows the design spec.
+3. In the next row, we’re going to continue following the design spec and add one card in each column.
+4. In each column, add a card that:
+  - Does not have a border
+  - Has an image icon on the top
+  - Has centered text on the bottom
 
 Here are the linked icons for convenience:
-
 experienced icon.
 fun icon.
 smart icon.
