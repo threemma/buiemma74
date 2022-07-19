@@ -1,5 +1,4 @@
-/* CSS files add styling rules to your content */
-
+/* Most of your styles should come from Bootstrap classes, adding styles to this class should be unnecessary */
 body {
   font-family: helvetica, arial, sans-serif;
   margin: 2em;
