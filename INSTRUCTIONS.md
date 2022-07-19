@@ -25,8 +25,7 @@ Add the Adhoc logo to the navbar where the design spec indicates it should be.
 
 1. Locate the element with class `navbar-brand`
 2. Delete the text Navbar and replace it with an `<img>` element with the correct src value
-
-- Make sure to upload the logo from the `zip` file into the `assets` folder first!
+  - Make sure to upload the logo from the `zip` file into the `assets` folder first!
 
 3. Remember to assign an appropriate value to the alt attribute.
 
@@ -78,61 +77,44 @@ Finish up the quote styling by increasing the top and bottom margins of the colu
 4. In each column, add a card that:
   - Does not have a border
   - Has an image icon on the top
-  - Has centered text on the bottom
+  - Has centered text on the bottom  
+  The icons can be found in the `zip` file as:
+    - `experienced.png`
+    - `fun.png`
+    - `smart.png`
+5. While the columns look good on a large screen, the contents will look squished on smaller screens. Change the width of the column so that it has a width of 4 on medium screens and larger.
+6. For extra small and small-sized screens, it should have a width of 8.
+7. Also have the row horizontally center the columns containing the cards.
+8. Increase the vertical margins of the row with the text Why Adhoc and the row containing the cards to space out the rows.
 
-Here are the linked icons for convenience:
-experienced icon.
-fun icon.
-smart icon.
+## Carousel - Meet the Team
+Locate the row with the text `Meet the Team`.  
+Using utility classes, make the row render a dark background with rounded top border as indicated by the design spec. 
+Now style `<h2>` element that has the text `Meet the Team`:
+1. Apply the following styling for the <h2> element:
+  - Make the text white.
+  - Center the text.
+  - Make it a Bootstrap display header.
+2. Next, style the row below the text `Meet the Team`
+  - Give the bottom row a dark background and a rounded bottom border.
+3. Take a look at the code that renders a carousel copied [directly from Bootstrap’s carousel with controls example](https://getbootstrap.com/docs/4.2/components/carousel/#with-controls).  
+  - Like with the navbar, we’re going to modify the code to fit our needs. For each `<div>` with a class of `carousel-item`, assign the nested `<img>`‘s src a URL to the provided pictures in the intro’s image assets. Also, provide an appropriate value for the alt attribute
+4. With the slides set up, we can now add some captions to each slide.
+5. Style the captions with a black background, no vertical padding, and a rounded-pill border.
+6. Inside the captions, add the appropriate text and style it according to the design spec.
+7. Change the width of the carousel to only take up 50% of the screen and set the margin to automatically center its contents.
+8. Then go back and adjust the spacing of the rows to follow the design spec.
 
-While the columns look good on a large screen, the contents look squished on a smaller screen. Change the width of the column so that it has a width of 4 on medium, and larger, sized screens.
+## Footer - Finishing Up
+The last element we have to style is the `<footer>`, simply center the text.  
+And you're done! Congratulate yourself on a completely Bootstrapped website!  
+There are different ways to re-create the layout of the website, so figure out what works best for you!  
 
-For extra small and small-sized screens, it should have a width of 8.
-
-Let’s also have the row center the columns containing the cards.
-
-Increase the vertical margins of the row with the text Why Adhoc and the row containing the cards to space out the rows.
-
-Meet the team - Carousel
-
-Locate the row with the text Meet the Team. According to the design spec, provide that row with utility classes that render a dark background with rounded top border.
-
-Now let’s style <h2> element that has the text Meet the Team.
-
-Apply the following styling for the <h2> element:
-
-Make the text white.
-Center the text.
-Make it a Bootstrap display header.
-
-16. Time to style the row below the text Meet the Team.
-
-Give the bottom row a dark background and a rounded bottom border.
-
-17. Take a look at the code that renders a carousel. It was copied directly from Bootstrap’s carousel with controls example.
-
-Like with the navbar, we’re going to modify the code to fit our needs. For each <div> with a class of "carousel-item", assign the nested <img>‘s src a URL to the provided pictures in the intro’s image assets. Also, provide an appropriate value for the alt attribute 18. With the slides set up, we can add some captions to each slide.
-
-Style the captions so that it has a black background, no vertical padding, and a rounded-pill border.
-
-Inside the captions, add the appropriate text and style it according to the design spec.
-
-19. Change the sizing of the carousel to only take up 50% of the width and set the margin to automatically center its contents.
-
-Then go back and adjust the spacing of the rows to follow the design spec.
-
-Finishing Up
-
-20. The last element we have to style is the <footer>, center the text.
-
-21. Congratulate yourself on a website well Bootstrapped!
-
-There are different ways to re-create the layout of the website, so figure out what works best for you!
-
+### Challenges
 If you want to challenge yourself:
-
-Add the HTML pages in the navbar and link to them.
-Add more Bootstrap components.
-Apply extra styling to the components.
-Make the columns even more responsive by including more breakpoints.
-Redesign the website to follow a different layout. This is the most involved task since it requires that you think about what you want on your site, how to arrange the layout, and how to implement this idea. While it may be challenging, it’s also extremely rewarding!
+- Add the HTML pages in the navbar and link to them.
+- Add more Bootstrap components.
+- Apply extra styling to the components.
+- Make the columns even more responsive by including more breakpoints.
+- Redesign the website to follow a different layout. This is the most involved task since it requires that you think about what you want on your site, how to arrange the layout, and how to implement this idea
+    - While it may be challenging, it’s also extremely rewarding!
