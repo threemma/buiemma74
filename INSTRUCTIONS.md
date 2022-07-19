@@ -2,20 +2,21 @@
 ---
 These are the step-by-step instructions for putting together the Adhoc site.  
 I recommend that you try each section independently before using this to check your results instead of copy off however this is perfect if you don't know where to start.  
-I have rewritten the instructions a bit more and they are now a lot more dependent on `Ctrl + F` for finding what I am refering to.
+I have rewritten the instructions a bit more and they are now a lot more dependent on `Ctrl + F` for finding what I am refering to.  
+Some things have been reworded so [see the original instructions here](https://docs.google.com/document/d/1Ed2jBCxiD5MWOk4DMdlR1RulvduodNqcdALRBDBpRuM/edit).
 
 
 ## Editing the Navbar
-Before starting the navbar, you'll notice that there's already some starter code 
-Let’s first tackle the navbar, but notice that there’s already some code there! That’s the code copied from Bootstrap’s navbar example.
+Before starting the navbar, you'll notice that there's already some starter code (between the `<nav>` to `</nav>` lines)  
+This code was copied straight from Bootstrap's navbar example [here](https://getbootstrap.com/docs/4.2/components/navbar/)
 
-It’s a good starter template but we still have to edit this code to fit our needs. Therefore, remove the code that renders these elements:
+It’s a good template to start from but it still needs to be edited to fit our needs.  
+For our purposes, remove the HTML responsible for the following:
+* The Navbar item with a dropdown
+* The link that says "Disabled"
+* The search bar
 
-the dropdown option.
-the disabled link.
-the search bar.
-
-Add Adhoc’s logo to the navbar.
+Add the Adhoc logo to where the design specific
 
 Locate the element with class "navbar-brand". Delete the text Navbar and replace it with an <img> element with the correct src value. You should make sure to upload the logo into the assets folder in your project first!
 
