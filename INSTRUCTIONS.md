@@ -16,19 +16,20 @@ For our purposes, remove the HTML responsible for the following:
 * The link that says "Disabled"
 * The search bar
 
-Add the Adhoc logo to where the design specific
+#### The Logo
+Add the Adhoc logo to the navbar where the design spec indicates it should be.
+1. Locate the element with class `navbar-brand`
+2. Delete the text Navbar and replace it with an ``<img>`` element with the correct src value
+  * Make sure to upload the logo from the `zip` file into the `assets` folder first!
+3. Remember to assign an appropriate value to the alt attribute.
 
-Locate the element with class "navbar-brand". Delete the text Navbar and replace it with an <img> element with the correct src value. You should make sure to upload the logo into the assets folder in your project first!
-
-Remember to assign an appropriate value to the alt attribute.
-
+#### The Navigation Links
 According to the design spec, we should have 4 links (not including the brand) in the navbar.
+Using the second link as a template, make 2 additional links and update the link texts to match the design spec.
 
-Use the second link as a template and make 2 additional links. Change the text of the links to follow the design spec.
 
-Adding the Jumbotron
-
-Under the navbar, there’s a <div> that we’re going to turn into our jumbotron!
+## Adding the Jumbotron
+Under the navbar, there’s a `<div>` that we’re going to turn into our Jumbotron!
 
 It currently has some inline CSS that renders a background image.
 
